@@ -1,0 +1,161 @@
+.cardThree{
+    height: 75vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    padding: 15px;
+    cursor: pointer;
+    gap: 10px;
+    border-bottom: 1px solid #464545;
+}
+.leftCardThree{
+    height: 100%;
+    width: 10%;
+    /* background-color: white; */
+
+    & nav{
+        height: 10%;
+        width: 100%;
+        border-radius: 50%;
+        background-color: black;
+
+        & img{
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+}
+.rightCardThree{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding-top: 5px;
+
+    & footer{
+        height: 8%;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        & div{
+            height: 80%;
+            width: 13%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+            font-size: 17px;
+            color: #868585;
+        }
+
+        & nav{
+            height: 80%;
+            width: 80%;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #868585;
+
+            & p{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 17px;
+            }
+        }
+    }
+
+    & section{
+        height: 55%;
+        width: 100%;
+        background-color: black;
+        border-radius: 15px;
+        display: flex;
+        border: 1px solid #464545;
+
+            & img,video{
+                object-fit: contain;
+                object-position: center;
+                height: 100%;
+                width: 100%;
+            }
+    }
+
+    & aside{
+        height: 20%;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+
+        & div{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
+
+    & article{
+        height: 10%;
+        width: 100%;
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+    }
+
+    & header{
+        height: 5%;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color:  #868585;
+
+        & div{
+            height: 100%;
+            width: 90%;
+            display: flex;
+            gap: 7px;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+
+            & h5{
+                color: white;
+                font-size: 15px;
+                font-weight: 600;
+            }
+            & h5:hover{
+                text-decoration: underline;
+            }
+
+            & p{
+                color:  #868585;
+                font-size: 12px;
+            }
+        }
+
+    }
+}
+.comment:hover,.bar:hover,.sideIcon:hover{
+    color: #1D9BF0;
+}
+.retweet:hover{
+    color: #39b039c8;
+}
+.like:hover{
+    color: rgb(180, 73, 109);
+}

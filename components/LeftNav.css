@@ -1,0 +1,387 @@
+.leftNav{
+    height: 100vh;
+    width: 14%;
+    background-color: black;
+    display: flex;
+    position: sticky;
+    left: 0;
+    top: 0;
+    border-right:  1px solid #464545;
+    
+}
+.leftSidebar{
+    height: 100%;
+    width: 61%;
+    background-color: black;
+}
+.rightSidebar{
+    height: 100%;
+    width: 30%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.upperSide{
+    height: 80%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+
+    & aside:hover::after{
+        opacity: 1;
+    }
+
+    & .grok:hover::after{
+        opacity: 1;
+    }
+
+
+    & aside{
+        height: 11%;
+        width: 90%;
+        background-color: black;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 27px;
+        color: white;
+        cursor: pointer;
+        position: relative;
+    }
+    & div{
+        height: 11%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        border-radius: 50%;
+        cursor: pointer;
+        position: relative;
+
+        & nav{
+            height: 50%;
+            width: 50%;
+            background-color: black;
+            border: 2px solid white;
+            border-radius: 1px;
+
+            & img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+    & .nav{
+        height: 12%;
+        width: 100%;
+        background-color: white;
+        border-radius: 50%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+
+        & img{
+            height: 80%;
+            width: 80%;
+            border-radius: 50%;
+        }
+    }
+
+    & aside:hover,div:hover{
+        background-color:  #455a647a;
+    }
+}
+.lowerSide{
+    height: 13%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    & .lowerSideDiv{
+        height: 73%;
+        width: 100%;
+        border-radius: 50%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        justify-content: center;
+
+        & div{
+        height: 75%;
+        width: 75%;
+        background-color: #455A64;
+        color: white;
+        border-radius: 50%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    }
+
+
+}
+.homey::after{
+    display: block;
+    content: "Home";
+    height: 15px;
+    width: 35px;
+    background-color: #455a64be;
+    position: absolute;
+    bottom: -32%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 3;
+}
+.searches::after{
+    display: block;
+    content: "Explore";
+    height: 15px;
+    width: 45px;
+    background-color: #455a64be;
+    position: absolute;
+    bottom: -32%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 3;
+}
+.bell::after{
+    display: block;
+    content: "Notifications";
+    height: 15px;
+    width: 68px;
+    background-color: #455a64be;
+    position: absolute;
+    bottom: -32%;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 3;
+}
+.maily::after{
+    display: block;
+    content: "Messages";
+    height: 15px;
+    width: 55px;
+    background-color: #455a64be;
+    position: absolute;
+    bottom: -32%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 3;
+}
+.grok::after{
+    display: block;
+    content: "Grok";
+    height: 15px;
+    width: 35px;
+    background-color: #455a64be;
+    position: absolute;
+    bottom: -32%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 3;
+}
+.user::after{
+    display: block;
+    content: "Profile";
+    height: 15px;
+    width: 45px;
+    background-color: #455a64be;
+    position: absolute;
+    bottom: -30%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 3;
+}
+.chat::after{
+    display: block;
+    content: "More";
+    height: 15px;
+    width: 35px;
+    background-color: #455a64b3;
+    position: absolute;
+    bottom: -30%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 3;
+}
+
+.nav:hover::after{
+    opacity: 1;
+}
+.nav::after{
+    display: block;
+    content: "Post";
+    height: 15px;
+    width: 30px;
+    background-color: #455A64;
+    position: absolute;
+    bottom: -30%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.lowerSideDiv:hover::before{
+    opacity: 1;
+}
+.lowerSideDiv::before{
+    display: block;
+    content: "Accounts";
+    height: 13px;
+    width: 50px;
+    background-color: #455A64;
+    position: absolute;
+    top: -8%;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.lowerSideDiv:hover{
+    background-color: #404b4f71;
+}
+
+
+
+@media only screen and (max-width:900px) {
+    .leftNav{
+        display: flex;
+        justify-content: center;
+        width: 20%;
+    }
+    .leftSidebar{
+        display: none;
+    }
+    .rightSidebar{
+        background-color: black;
+        height: 100%;
+        width: 50%;
+    }
+    .upperSide{
+        height: 80%;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        align-items: center;
+    
+    
+        & aside{
+            height: 11%;
+            width: 90%;
+            background-color: black;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            color: white;
+            cursor: pointer;
+        }
+        & div{
+            height: 11%;
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            border-radius: 50%;
+            cursor: pointer;
+    
+            & nav{
+                height: 40%;
+                width: 40%;
+                background-color: black;
+                border: 2px solid white;
+                border-radius: 1px;
+    
+                & img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+        & .nav{
+            height: 12%;
+            width: 100%;
+            background-color: white;
+            border-radius: 50%;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            & img{
+                height: 80%;
+                width: 80%;
+                border-radius: 50%;
+            }
+        }
+    
+        & aside:hover,div:hover{
+            background-color:  #455a647a;
+        }
+    }
+}
+@media only screen and (max-width:480px) {
+    .leftNav{
+        display: none;
+    }
+}
